@@ -180,6 +180,24 @@
         p { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 20px; font-weight: 300; }
         strong { font-weight: 500; color: #fff; }
 
+        /* PREMIUM BADGE TAGLINE */
+        .premium-badge {
+            display: inline-block;
+            padding: 8px 24px;
+            margin-bottom: 24px;
+            border-radius: 50px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(212, 175, 55, 0.05));
+            border: 1px solid var(--gold-accent);
+            color: var(--gold-accent);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
+            backdrop-filter: blur(5px);
+        }
+
         /* Elegant Cards */
         .glass-card {
             background: var(--card-bg);
@@ -245,7 +263,7 @@
         .form-control:focus { border-color: var(--primary-accent); background: rgba(0,0,0,0.5); }
         .form-control::placeholder { color: #888; font-weight: 300; }
 
-        /* ELEGANT VOICE FAQ (Restored) */
+        /* ELEGANT VOICE FAQ */
         .faq-item { background: transparent; padding: 20px 0; border-bottom: 1px solid var(--card-border); display: flex; flex-direction: column; gap: 10px;}
         .faq-item:last-child { border-bottom: none; }
         .faq-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 15px;}
@@ -262,7 +280,7 @@
         .voice-btn.playing { background: var(--primary-accent); color: #fff; animation: pulse-purple 1.5s infinite; }
         @keyframes pulse-purple { 0% { box-shadow: 0 0 0 0 rgba(155, 81, 224, 0.4); } 70% { box-shadow: 0 0 0 12px rgba(155, 81, 224, 0); } 100% { box-shadow: 0 0 0 0 rgba(155, 81, 224, 0); } }
 
-        /* LSI Tags (Restored) */
+        /* LSI Tags */
         .lsi-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
         .tag-badge { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 30px; font-size: 0.9rem; color: var(--text-muted); text-decoration: none; transition: 0.3s; }
         .tag-badge:hover { background: rgba(255,255,255,0.1); color: #fff; border-color: var(--primary-accent); }
@@ -346,9 +364,19 @@
     <div class="container">
         <!-- HERO ANIMATED BACKGROUND (AURA.BUILD STYLE) -->
         <header class="hero-animated-bg text-center" style="text-align: center;">
-            <h1>Elegansi Diet & Detox</h1>
-            <p style="color: #e2e8f0;"><strong>Agen Flimty Resmi Jawa Timur. Trust with Result since 2018.</strong></p>
-            <p style="max-width: 600px; margin: 0 auto; color: #cbd5e1;">Sebuah perpaduan sempurna dari alam. Bersihkan saluran pencernaan Anda dengan serat premium peraih 5x Top Brand Award, dirancang khusus untuk gaya hidup modern.</p>
+            
+            <!-- TAGLINE PREMIUM Ala Ozzaskin -->
+            <div class="premium-badge">OFFICIAL DISTRIBUTOR FLIMTY JAWA TIMUR</div>
+            
+            <h1 style="margin-bottom: 10px;">Elegansi Diet & Detox</h1>
+            
+            <h2 style="font-size: 1.25rem; font-family: 'Outfit', sans-serif; font-weight: 400; color: #e2e8f0; border-bottom: none; margin-bottom: 20px; padding-bottom: 0;">
+                Solusi Tuntas Pencernaan Lancar & Bebas Perut Buncit Tanpa Rasa Melilit
+            </h2>
+            
+            <p style="max-width: 650px; margin: 0 auto; color: #cbd5e1; font-size: 1.05rem;">
+                Jangan tunggu sampai lemak jenuh membandel. Kini hadir formulasi premium kaya serat (Psyllium Husk & Goji Berry) peraih 5x Top Brand Award untuk mengembalikan bentuk tubuh ideal Anda. <strong>Trust with Result since 2018.</strong>
+            </p>
             
             <div class="jarvis-video-facade" onclick="playVSL(this)">
                 <img src="image/video-vertical.webp" alt="Testimoni Agen Flimty Resmi Premium">
@@ -437,7 +465,7 @@
                 <input type="hidden" name="access_key" value="bea8e485-773b-40a3-88f1-78a1fe496511">
                 <!-- IDENTITAS UNTUK SUBJECT EMAIL -->
                 <input type="hidden" name="subject" value="Order Baru: Flimty Surabaya">
-                <input type="hidden" name="source" value="Form Landing Page Flimty V8.3">
+                <input type="hidden" name="source" value="Form Landing Page Flimty V8.4">
 
                 <div class="form-group">
                     <input type="text" name="name" id="custName" class="form-control" placeholder="Nama Lengkap Anda" required>
